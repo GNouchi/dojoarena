@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="dojoArena.css" />
+    <script src="https://code.jquery.com/jquery-3.3.1.js"
+    integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+    crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function(){
+            // // Select Arena
+            // var temp = "";
+            // $(".menu button").hover(function(){
+            //     temp = "url("+$(this).attr("src")+")";
+            //     console.log(temp);
+            //     console.log("Hello!!")
+            //     $(".container").css("background-image", temp);
+            // })
+
+            $("#player1").hover(function(){
+                var selected = $("player1 option:selected");
+                var x = $("#player1").val();
+                $('#div').html("<img src='" + x +"' >");
+                console.log(" value ==>" + x);
+                console.log(selected);
+            })
+
+
+        })
+
+
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="interface">
+
+                <div class="menu">
+                    <!-- <h1>Select Arena</h1>
+                    <button src="beach.jpg">Beach</button>
+                    <button src="earth.jpg">Planet</button>
+                    <button src="dojo.jpg">Dojo</button>
+                    <button src="forest.jpg">Forest</button>
+                    <button src="matrix.jpg">Matrix</button>
+                    <button src="snow.jpg">Snow</button> -->
+
+                    <div class="select_players">
+                        <h1>Select Player</h1>
+                        <!-- <form class="player_one"> -->
+                            <select id="player1">
+                                <option value="donny.png">Donny</option>
+                                <option value="leo.png">Leo</option>
+                                <option value="mikey.png">Mikey</option>
+                                <option value="raphael.png">Raphael</option>
+                            </select>
+
+
+                        <!-- </form> -->
+                        <form>
+                                <select name="player2">
+                                <option value="donny.png">Donny</option>
+                                <option value="leo.png">Leo</option>
+                                <option value="mikey.png">Mikey</option>
+                                <option value="raphael.png">Raphael</option>
+                                </select>
+                        </form>
+
+                    </div>
+                </div>
+        </div>
+        <div id ="div">        </div>
+    </div>
+
+</body>
+</html>

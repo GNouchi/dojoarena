@@ -1,0 +1,39 @@
+.container{
+    height: 600px;
+    width: 970px;
+    background-color: black;
+    border: 5px solid gray;
+}
+.interface{
+    height: 200px;
+    width: 350px;
+    margin-left: 300px;
+    margin-top: 75px;
+    background-color: #a3a4a6;
+    border: 2px solid #4e4e4e;
+}
+.interface h1{
+    text-align: center;
+    color: #eba500;
+
+}
+.menu{
+    height: 200px;
+    width: 300px;
+    border: 1px dashed red;
+    margin-left: 25px;
+    text-align: center;
+}
+.menu button{
+    border-radius: 4px;
+    width: 80px;
+    height: 30px;
+}
+.select_players form{
+    display: inline-block;
+}
+#div{
+    height: 200px;
+    width: 200px;
+    background: orange;
+}
